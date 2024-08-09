@@ -1,1 +1,1 @@
-# tsunami-no-nigeba
+# 津波の逃げ場
