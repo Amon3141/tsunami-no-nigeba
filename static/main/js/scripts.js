@@ -7,12 +7,11 @@ function hideLoader() {
 }
 
 function findNearestLocation() {
+  showLoader();
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
-
-      showLoader();
 
       fetch('/api/provide_nearest_location/', {
         method: 'POST',
