@@ -3,5 +3,12 @@
 {% block title %}津波の逃げ場{% endblock %}
 
 {% block content %}
+<p class="app-description">国土地理院によって指定された<strong>「指定緊急避難場所」</strong>のうち最も近くの場所等を検索します</p>
 <button class="nearest-button">一番近い避難場所</button>
+<div class="result-container">
+  <div class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+  <div class="result"></div>
+</div>
 {% endblock %}
