@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(36, 37, 123);
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+.app-title {
+  color: rgb(214, 214, 214);
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+main {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 2, 17);
+  padding-inline: 1.5rem;
+}
+
+.nearest-button {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(48, 48, 48);
+  background-color: rgb(206, 183, 33);
+  height: 140px;
+  width: 550px;
+  border: none;
+  border-radius: 100px;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-title {
+    font-size: 1.7rem;
+  }
+
+  .nearest-button {
+    font-size: 1.8rem;
+    height: 100px;
+    width: 330px;
+    border-radius: 50px;
+  }
+}
